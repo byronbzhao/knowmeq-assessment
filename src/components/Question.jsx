@@ -9,15 +9,14 @@ const Question = () => {
 
 	return (
 		<div>
-			<div className="question">{currentQuestion.question}</div>
-			<div className="answers">
+			<div className="">
 				{quizState.answers.map((answer, index) => (
 					<Answer
 						answer={answer}
 						key={index}
 						index={index}
-                        currentAnswer={quizState.currentAnswer}
-                        correctAnswer={currentQuestion.correctAnswer}
+						currentAnswer={quizState.currentAnswer}
+						correctAnswer={currentQuestion.correctAnswer}
 						onSelectAnswer={(answerText) =>
 							dispatch({ type: 'SELECT_ANSWER', payload: answerText })
 						}
