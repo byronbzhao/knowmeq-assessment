@@ -61,4 +61,22 @@ export const questions = [
       ],
       correctAnswer: "h1 {background-color:#FFFFFF;}",
     },
+    {
+      question: "Which of the following function of the String object returns the character in the string starting at the specified position via the specified number of characters?",
+      incorrectAnswers: [
+        "slice()",
+        "split()",
+        "search()",
+      ],
+      correctAnswer: "substr()",
+    },
+    {
+      question: "Arrays in JavaScript are defined by which of the following statements",
+      incorrectAnswers: [
+        "It is an ordered list of objects",
+        "It is an ordered list of string",
+        "It is an ordered list of functions",
+      ],
+      correctAnswer: "It is an ordered list of values",
+    },
   ];
